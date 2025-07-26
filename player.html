@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>正在打开最新地址</title>
+  <link rel="icon" href="https://img.alicdn.com/tfs/TB1_ZXuNcfpK1RjSZFOXXa6nFXa-32-32.ico" type="image/x-icon" />
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    p {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <p><img src="https://img.alicdn.com/imgextra/i1/120180649/O1CN01FIMwke1GfHxuJ93m0_!!120180649.gif" alt="Dizhi"></p>
+  <p>正在爲您選擇最優線路，請等待5秒鐘...</p>
+  <p>頁面如未正常打開，請按F5刷新重試！</p>
+  <script>
+    var urls = ["https://n4.firefall.club/"];
+    var randomIndex = Math.floor(Math.random() * urls.length);
+    setTimeout(function () {
+      window.location.href = urls[randomIndex];
+    }, 5000);
+  </script>
+</body>
+</html>

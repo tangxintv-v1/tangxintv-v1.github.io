@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>萝莉在线影院 -海量在线萝莉影视发布页</title>
+    <meta name="keywords" content="萝莉在线,在线电影,电视剧,高清影视,最新电影,热门电视剧,影视观看">
+    <meta name="description" content="萝莉在线提供最新、最热门的电影和电视剧在线观看服务，涵盖多种类型，满足不同观众的观影需求。高清画质，流畅播放，随时随地享受精彩影视内容。">
+ <script src=https://cdn.tailwindcss.com/3.4.16> </script>
+ <script>
+        tailwind.config = {
+            darkMode: `class`
+        }
+    </script>
+    <link href=https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css rel=stylesheet>
+    <style>
+        @import "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap";
+
+        :root {
+            --primary-color: #3b82f6;
+            --secondary-color: #1e40af;
+            --accent-color: #60a5fa;
+            --text-primary: #1f2937;
+            --text-secondary: #4b5563;
+            --bg-primary: #fff;
+            --bg-secondary: #f3f4f6;
+            --card-bg: #fff;
+            --card-border: #e5e7eb
+        }
+
+        .dark {
+            --primary-color: #60a5fa;
+            --secondary-color: #93c5fd;
+            --accent-color: #3b82f6;
+            --text-primary: #f9fafb;
+            --text-secondary: #e5e7eb;
+            --bg-primary: #111827;
+            --bg-secondary: #1f2937;
+            --card-bg: #1f2937;
+            --card-border: #374151
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: Noto Sans SC, sans-serif;
+            transition: background-color .3s, color .3s
+        }
+
+        .feature-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            transition: all .3s
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px #0000001a, 0 10px 10px -5px #0000000a
+        }
+
+        .btn {
+            transition: all .2s
+        }
+
+        .btn:hover {
+            transform: scale(1.05)
+        }
+
+        .fade-in {
+            animation: .8s ease-in fadeIn
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        .step-number {
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            width: 36px;
+            height: 36px;
+            margin-right: 12px;
+            font-weight: 700;
+            display: flex
+        }
+
+        .step-item {
+            align-items: flex-start;
+            margin-bottom: 16px;
+            display: flex
+        }
+
+        .step-content {
+            flex: 1
+        }
+
+        .theme-toggle {
+            cursor: pointer;
+            border-radius: 50%;
+            padding: 8px;
+            transition: background-color .3s
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--bg-secondary)
+        }
+    </style>
+    <style>
+        *,
+        ::before,
+        ::after {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            --tw-contain-size: ;
+            --tw-contain-layout: ;
+            --tw-contain-paint: ;
+            --tw-contain-style:
+        }
+
+        ::backdrop {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            --tw-contain-size: ;
+            --tw-contain-layout: ;
+            --tw-contain-paint: ;
+            --tw-contain-style:
+        }
+
+        /* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb
+        }
+
+        ::after,
+        ::before {
+            --tw-content: ''
+        }
+
+        :host,
+        html {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            -moz-tab-size: 4;
+            tab-size: 4;
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        body {
+            margin: 0;
+            line-height: inherit
+        }
+
+        hr {
+            height: 0;
+            color: inherit;
+            border-top-width: 1px
+        }
+
+        abbr:where([title]) {
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: inherit
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit
+        }
+
+        b,
+        strong {
+            font-weight: bolder
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            font-size: 1em
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline
+        }
+
+        sub {
+            bottom: -.25em
+        }
+
+        sup {
+            top: -.5em
+        }
+
+        table {
+            text-indent: 0;
+            border-color: inherit;
+            border-collapse: collapse
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            font-feature-settings: inherit;
+            font-variation-settings: inherit;
+            font-size: 100%;
+            font-weight: inherit;
+            line-height: inherit;
+            letter-spacing: inherit;
+            color: inherit;
+            margin: 0;
+            padding: 0
+        }
+
+        button,
+        select {
+            text-transform: none
+        }
+
+        button,
+        input:where([type=button]),
+        input:where([type=reset]),
+        input:where([type=submit]) {
+            -webkit-appearance: button;
+            background-color: transparent;
+            background-image: none
+        }
+
+        :-moz-focusring {
+            outline: auto
+        }
+
+        :-moz-ui-invalid {
+            box-shadow: none
+        }
+
+        progress {
+            vertical-align: baseline
+        }
+
+        ::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+            height: auto
+        }
+
+        [type=search] {
+            -webkit-appearance: textfield;
+            outline-offset: -2px
+        }
+
+        ::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit
+        }
+
+        summary {
+            display: list-item
+        }
+
+        blockquote,
+        dd,
+        dl,
+        figure,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        p,
+        pre {
+            margin: 0
+        }
+
+        fieldset {
+            margin: 0;
+            padding: 0
+        }
+
+        legend {
+            padding: 0
+        }
+
+        menu,
+        ol,
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+        dialog {
+            padding: 0
+        }
+
+        textarea {
+            resize: vertical
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            opacity: 1;
+            color: #9ca3af
+        }
+
+        [role=button],
+        button {
+            cursor: pointer
+        }
+
+        :disabled {
+            cursor: default
+        }
+
+        audio,
+        canvas,
+        embed,
+        iframe,
+        img,
+        object,
+        svg,
+        video {
+            display: block;
+            vertical-align: middle
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto
+        }
+
+        [hidden]:where(:not([hidden=until-found])) {
+            display: none
+        }
+
+        .container {
+            width: 100%
+        }
+
+        @media (min-width: 640px) {
+            .container {
+                max-width: 640px
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 768px
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1024px
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .container {
+                max-width: 1280px
+            }
+        }
+
+        @media (min-width: 1536px) {
+            .container {
+                max-width: 1536px
+            }
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .mb-12 {
+            margin-bottom: 3rem
+        }
+
+        .mb-16 {
+            margin-bottom: 4rem
+        }
+
+        .mb-2 {
+            margin-bottom: 0.5rem
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem
+        }
+
+        .mb-6 {
+            margin-bottom: 1.5rem
+        }
+
+        .mr-2 {
+            margin-right: 0.5rem
+        }
+
+        .mr-3 {
+            margin-right: 0.75rem
+        }
+
+        .mr-4 {
+            margin-right: 1rem
+        }
+
+        .mt-1 {
+            margin-top: 0.25rem
+        }
+
+        .inline-block {
+            display: inline-block
+        }
+
+        .flex {
+            display: flex
+        }
+
+        .grid {
+            display: grid
+        }
+
+        .hidden {
+            display: none
+        }
+
+        .h-12 {
+            height: 3rem
+        }
+
+        .h-64 {
+            height: 16rem
+        }
+
+        .min-h-screen {
+            min-height: 100vh
+        }
+
+        .w-12 {
+            width: 3rem
+        }
+
+        .w-64 {
+            width: 16rem
+        }
+
+        .w-full {
+            width: 100%
+        }
+
+        .max-w-5xl {
+            max-width: 64rem
+        }
+
+        .grid-cols-1 {
+            grid-template-columns: repeat(1, minmax(0, 1fr))
+        }
+
+        .flex-col {
+            flex-direction: column
+        }
+
+        .items-start {
+            align-items: flex-start
+        }
+
+        .items-center {
+            align-items: center
+        }
+
+        .justify-center {
+            justify-content: center
+        }
+
+        .justify-between {
+            justify-content: space-between
+        }
+
+        .gap-6 {
+            gap: 1.5rem
+        }
+
+        .gap-8 {
+            gap: 2rem
+        }
+
+        .space-y-4> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(1rem * var(--tw-space-y-reverse))
+        }
+
+        .space-y-8> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(2rem * var(--tw-space-y-reverse))
+        }
+
+        .rounded-full {
+            border-radius: 9999px
+        }
+
+        .rounded-lg {
+            border-radius: 0.5rem
+        }
+
+        .rounded-xl {
+            border-radius: 0.75rem
+        }
+
+        .rounded-r-lg {
+            border-top-right-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem
+        }
+
+        .border-l-4 {
+            border-left-width: 4px
+        }
+
+        .border-t {
+            border-top-width: 1px
+        }
+
+        .border-gray-200 {
+            --tw-border-opacity: 1;
+            border-color: rgb(229 231 235 / var(--tw-border-opacity, 1))
+        }
+
+        .border-yellow-400 {
+            --tw-border-opacity: 1;
+            border-color: rgb(250 204 21 / var(--tw-border-opacity, 1))
+        }
+
+        .bg-blue-100 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-blue-50 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(239 246 255 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-blue-600 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-gray-200 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-green-100 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(220 252 231 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-indigo-100 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(224 231 255 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-purple-100 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(243 232 255 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-red-100 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(254 226 226 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-yellow-100 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(254 249 195 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-yellow-50 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(254 252 232 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-gradient-to-br {
+            background-image: linear-gradient(to bottom right, var(--tw-gradient-stops))
+        }
+
+        .bg-gradient-to-r {
+            background-image: linear-gradient(to right, var(--tw-gradient-stops))
+        }
+
+        .from-blue-300 {
+            --tw-gradient-from: #93c5fd var(--tw-gradient-from-position);
+            --tw-gradient-to: rgb(147 197 253 / 0) var(--tw-gradient-to-position);
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
+        }
+
+        .from-blue-50 {
+            --tw-gradient-from: #eff6ff var(--tw-gradient-from-position);
+            --tw-gradient-to: rgb(239 246 255 / 0) var(--tw-gradient-to-position);
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
+        }
+
+        .from-indigo-50 {
+            --tw-gradient-from: #eef2ff var(--tw-gradient-from-position);
+            --tw-gradient-to: rgb(238 242 255 / 0) var(--tw-gradient-to-position);
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
+        }
+
+        .to-indigo-50 {
+            --tw-gradient-to: #eef2ff var(--tw-gradient-to-position)
+        }
+
+        .to-indigo-500 {
+            --tw-gradient-to: #6366f1 var(--tw-gradient-to-position)
+        }
+
+        .to-purple-50 {
+            --tw-gradient-to: #faf5ff var(--tw-gradient-to-position)
+        }
+
+        .p-2 {
+            padding: 0.5rem
+        }
+
+        .p-6 {
+            padding: 1.5rem
+        }
+
+        .p-8 {
+            padding: 2rem
+        }
+
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem
+        }
+
+        .px-6 {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem
+        }
+
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem
+        }
+
+        .py-3 {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem
+        }
+
+        .py-8 {
+            padding-top: 2rem;
+            padding-bottom: 2rem
+        }
+
+        .pt-8 {
+            padding-top: 2rem
+        }
+
+        .text-center {
+            text-align: center
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+            line-height: 2rem
+        }
+
+        .text-3xl {
+            font-size: 1.875rem;
+            line-height: 2.25rem
+        }
+
+        .text-6xl {
+            font-size: 3.75rem;
+            line-height: 1
+        }
+
+        .text-lg {
+            font-size: 1.125rem;
+            line-height: 1.75rem
+        }
+
+        .text-sm {
+            font-size: 0.875rem;
+            line-height: 1.25rem
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem
+        }
+
+        .font-bold {
+            font-weight: 700
+        }
+
+        .font-medium {
+            font-weight: 500
+        }
+
+        .font-semibold {
+            font-weight: 600
+        }
+
+        .text-blue-500 {
+            --tw-text-opacity: 1;
+            color: rgb(59 130 246 / var(--tw-text-opacity, 1))
+        }
+
+        .text-blue-600 {
+            --tw-text-opacity: 1;
+            color: rgb(37 99 235 / var(--tw-text-opacity, 1))
+        }
+
+        .text-gray-600 {
+            --tw-text-opacity: 1;
+            color: rgb(75 85 99 / var(--tw-text-opacity, 1))
+        }
+
+        .text-green-600 {
+            --tw-text-opacity: 1;
+            color: rgb(22 163 74 / var(--tw-text-opacity, 1))
+        }
+
+        .text-indigo-600 {
+            --tw-text-opacity: 1;
+            color: rgb(79 70 229 / var(--tw-text-opacity, 1))
+        }
+
+        .text-purple-600 {
+            --tw-text-opacity: 1;
+            color: rgb(147 51 234 / var(--tw-text-opacity, 1))
+        }
+
+        .text-red-600 {
+            --tw-text-opacity: 1;
+            color: rgb(220 38 38 / var(--tw-text-opacity, 1))
+        }
+
+        .text-white {
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255 / var(--tw-text-opacity, 1))
+        }
+
+        .text-yellow-500 {
+            --tw-text-opacity: 1;
+            color: rgb(234 179 8 / var(--tw-text-opacity, 1))
+        }
+
+        .text-yellow-600 {
+            --tw-text-opacity: 1;
+            color: rgb(202 138 4 / var(--tw-text-opacity, 1))
+        }
+
+        .shadow-lg {
+            --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+        }
+
+        .shadow-xl {
+            --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+        }
+
+        .hover\:bg-blue-700:hover {
+            --tw-bg-opacity: 1;
+            background-color: rgb(29 78 216 / var(--tw-bg-opacity, 1))
+        }
+
+        .hover\:underline:hover {
+            -webkit-text-decoration-line: underline;
+            text-decoration-line: underline
+        }
+
+        .hover\:shadow-lg:hover {
+            --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+        }
+
+        .dark\:block:is(.dark *) {
+            display: block
+        }
+
+        .dark\:hidden:is(.dark *) {
+            display: none
+        }
+
+        .dark\:border-gray-700:is(.dark *) {
+            --tw-border-opacity: 1;
+            border-color: rgb(55 65 81 / var(--tw-border-opacity, 1))
+        }
+
+        .dark\:bg-blue-900:is(.dark *) {
+            --tw-bg-opacity: 1;
+            background-color: rgb(30 58 138 / var(--tw-bg-opacity, 1))
+        }
+
+        .dark\:bg-blue-900\/30:is(.dark *) {
+            background-color: rgb(30 58 138 / 0.3)
+        }
+
+        .dark\:bg-gray-700:is(.dark *) {
+            --tw-bg-opacity: 1;
+            background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1))
+        }
+
+        .dark\:bg-green-900:is(.dark *) {
+            --tw-bg-opacity: 1;
+            background-color: rgb(20 83 45 / var(--tw-bg-opacity, 1))
+        }
+
+        .dark\:bg-indigo-900:is(.dark *) {
+            --tw-bg-opacity: 1;
+            background-color: rgb(49 46 129 / var(--tw-bg-opacity, 1))
+        }
+
+        .dark\:bg-purple-900:is(.dark *) {
+            --tw-bg-opacity: 1;
+            background-color: rgb(88 28 135 / var(--tw-bg-opacity, 1))
+        }
+
+        .dark\:bg-red-900:is(.dark *) {
+            --tw-bg-opacity: 1;
+            background-color: rgb(127 29 29 / var(--tw-bg-opacity, 1))
+        }
+
+        .dark\:bg-yellow-900:is(.dark *) {
+            --tw-bg-opacity: 1;
+            background-color: rgb(113 63 18 / var(--tw-bg-opacity, 1))
+        }
+
+        .dark\:bg-yellow-900\/30:is(.dark *) {
+            background-color: rgb(113 63 18 / 0.3)
+        }
+
+        .dark\:from-gray-800:is(.dark *) {
+            --tw-gradient-from: #1f2937 var(--tw-gradient-from-position);
+            --tw-gradient-to: rgb(31 41 55 / 0) var(--tw-gradient-to-position);
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
+        }
+
+        .dark\:from-indigo-900\/30:is(.dark *) {
+            --tw-gradient-from: rgb(49 46 129 / 0.3) var(--tw-gradient-from-position);
+            --tw-gradient-to: rgb(49 46 129 / 0) var(--tw-gradient-to-position);
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
+        }
+
+        .dark\:to-gray-900:is(.dark *) {
+            --tw-gradient-to: #111827 var(--tw-gradient-to-position)
+        }
+
+        .dark\:to-purple-900\/30:is(.dark *) {
+            --tw-gradient-to: rgb(88 28 135 / 0.3) var(--tw-gradient-to-position)
+        }
+
+        .dark\:text-blue-400:is(.dark *) {
+            --tw-text-opacity: 1;
+            color: rgb(96 165 250 / var(--tw-text-opacity, 1))
+        }
+
+        .dark\:text-gray-400:is(.dark *) {
+            --tw-text-opacity: 1;
+            color: rgb(156 163 175 / var(--tw-text-opacity, 1))
+        }
+
+        .dark\:text-green-400:is(.dark *) {
+            --tw-text-opacity: 1;
+            color: rgb(74 222 128 / var(--tw-text-opacity, 1))
+        }
+
+        .dark\:text-indigo-400:is(.dark *) {
+            --tw-text-opacity: 1;
+            color: rgb(129 140 248 / var(--tw-text-opacity, 1))
+        }
+
+        .dark\:text-purple-400:is(.dark *) {
+            --tw-text-opacity: 1;
+            color: rgb(192 132 252 / var(--tw-text-opacity, 1))
+        }
+
+        .dark\:text-red-400:is(.dark *) {
+            --tw-text-opacity: 1;
+            color: rgb(248 113 113 / var(--tw-text-opacity, 1))
+        }
+
+        .dark\:text-yellow-400:is(.dark *) {
+            --tw-text-opacity: 1;
+            color: rgb(250 204 21 / var(--tw-text-opacity, 1))
+        }
+
+        @media (min-width: 768px) {
+            .md\:w-1\/2 {
+                width: 50%
+            }
+
+            .md\:grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr))
+            }
+
+            .md\:flex-row {
+                flex-direction: row
+            }
+
+            .md\:text-left {
+                text-align: left
+            }
+
+            .md\:text-3xl {
+                font-size: 1.875rem;
+                line-height: 2.25rem
+            }
+
+            .md\:text-4xl {
+                font-size: 2.25rem;
+                line-height: 2.5rem
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .lg\:grid-cols-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr))
+            }
+        }
+    </style>
+</head>
+
+<body class="min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-5xl">
+        <header class="flex justify-between items-center mb-12 fade-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.8s, transform 0.8s;">
+
+            <h1 class="text-3xl md:text-4xl font-bold text-center md:text-left"><i class="fas fa-film text-indigo-600 dark:text-indigo-400 text-2xl mr-2"></i><span class="font-bold text-xl">萝莉在线</span></h1>
+            <div class="theme-toggle p-2 rounded-full bg-gray-200 dark:bg-gray-700" id="themeToggle"> <i class="fas fa-moon dark:hidden"></i> <i class="fas fa-sun hidden dark:block"></i> </div>
+        </header>
+        <section class="mb-16 fade-in" style="animation-delay: 0.2s; opacity: 1; transform: translateY(0px); transition: opacity 0.8s, transform 0.8s;">
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 rounded-xl p-8 shadow-lg">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-full md:w-1/2">
+                        <h2 class="text-2xl md:text-3xl font-bold mb-4">萝莉在线高清影视资源平台</h2>
+                        <p class="text-lg mb-6">萝莉在线提供最新、最热门的电影和电视剧在线观看服务，涵盖多种类型，满足不同观众的观影需求。高清画质，流畅播放，随时随地享受精彩影视内容。</p>
+                        <div class="flex items-center"> <a class="inline-block bg-blue-50 dark:bg-blue-900/30 px-4 py-2 rounded-lg text-xl font-medium text-blue-600 dark:text-blue-400 hover:underline mr-2" href="/player.html" target="_blank" rel="nofollow"> <i class="fas fa-external-link-alt mr-2"></i>官网入口 </a> <a class="inline-block bg-blue-50 dark:bg-blue-900/30 px-4 py-2 rounded-lg text-xl font-medium text-blue-600 dark:text-blue-400 hover:underline" href="/player.html" target="_blank" rel="nofollow"> <i class="fas fa-external-link-alt mr-2"></i>立即观看 </a> </div>
+                    </div>
+                    <div class="w-full md:w-1/2 flex justify-center">
+                        <div class="w-64 h-64 rounded-full bg-gradient-to-br from-blue-300 to-indigo-500 flex items-center justify-center shadow-xl"> <i class="fas fa-film text-white text-6xl"></i> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-16 fade-in" style="animation-delay: 0.4s; opacity: 1; transform: translateY(0px); transition: opacity 0.8s, transform 0.8s;">
+            <h2 class="text-2xl font-bold mb-6 flex items-center"> <i class="fas fa-star text-yellow-500 mr-3"></i>功能特点 </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="feature-card rounded-xl p-6 hover:shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mr-4"> <i class="fas fa-film text-blue-600 dark:text-blue-400 text-xl"></i> </div>
+                        <h3 class="text-xl font-semibold">丰富的影视资源</h3>
+                    </div>
+                    <p>提供海量的电影、电视剧、综艺、动漫等资源，涵盖国内外热门作品，满足不同观众的需求。</p>
+                </div>
+                <div class="feature-card rounded-xl p-6 hover:shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mr-4"> <i class="fas fa-tv text-green-600 dark:text-green-400 text-xl"></i> </div>
+                        <h3 class="text-xl font-semibold">高清画质</h3>
+                    </div>
+                    <p>支持多种清晰度选择，包括720p、1080p、蓝光原盘和4K高清资源，满足用户对画质的高要求。</p>
+                </div>
+                <div class="feature-card rounded-xl p-6 hover:shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-red-100 dark:bg-red-900 flex items-center justify-center mr-4"> <i class="fas fa-ad text-red-600 dark:text-red-400 text-xl"></i> </div>
+                        <h3 class="text-xl font-semibold">无广告干扰</h3>
+                    </div>
+                    <p>网站界面清爽简洁，完全无广告弹窗，为用户提供舒适的观影环境。</p>
+                </div>
+                <div class="feature-card rounded-xl p-6 hover:shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center mr-4"> <i class="fas fa-search text-purple-600 dark:text-purple-400 text-xl"></i> </div>
+                        <h3 class="text-xl font-semibold">便捷的搜索功能</h3>
+                    </div>
+                    <p>用户可以通过关键词快速搜索到所需内容，操作简单方便。</p>
+                </div>
+                <div class="feature-card rounded-xl p-6 hover:shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-yellow-100 dark:bg-yellow-900 flex items-center justify-center mr-4"> <i class="fas fa-download text-yellow-600 dark:text-yellow-400 text-xl"></i> </div>
+                        <h3 class="text-xl font-semibold">离线下载与在线播放</h3>
+                    </div>
+                    <p>支持在线观看和离线下载功能，方便用户随时随地观看喜欢的影视作品。</p>
+                </div>
+                <div class="feature-card rounded-xl p-6 hover:shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-indigo-100 dark:bg-indigo-900 flex items-center justify-center mr-4"> <i class="fas fa-mobile-alt text-indigo-600 dark:text-indigo-400 text-xl"></i> </div>
+                        <h3 class="text-xl font-semibold">多设备兼容性</h3>
+                    </div>
+                    <p>支持手机、平板电脑等多种设备访问，确保用户在任何场景下都能使用。</p>
+                </div>
+            </div>
+        </section>
+        <section class="mb-16 fade-in" style="animation-delay: 0.6s; opacity: 1; transform: translateY(0px); transition: opacity 0.8s, transform 0.8s;">
+            <h2 class="text-2xl font-bold mb-6 flex items-center"> <i class="fas fa-list-ol text-blue-500 mr-3"></i>使用步骤 </h2>
+            <div class="space-y-8">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="text-xl font-semibold mb-2">访问网站</h3>
+                        <p>打开浏览器并输入网址，进入萝莉在线的主页。</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="text-xl font-semibold mb-2">搜索内容</h3>
+                        <p>在首页顶部的搜索框中输入您想观看的影视名称或关键词，点击搜索按钮。</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="text-xl font-semibold mb-2">选择影片</h3>
+                        <p>根据搜索结果选择合适的影片或电视剧，点击进入详情页面。</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 class="text-xl font-semibold mb-2">选择清晰度</h3>
+                        <p>在详情页面中选择清晰度（如720p、1080p、蓝光原盘或4K），点击播放按钮即可开始观看。</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3 class="text-xl font-semibold mb-2">下载资源</h3>
+                        <p>如果需要下载资源，可点击页面上的下载按钮，选择保存路径后即可完成下载。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-16 fade-in" style="animation-delay: 0.8s; opacity: 1; transform: translateY(0px); transition: opacity 0.8s, transform 0.8s;">
+            <h2 class="text-2xl font-bold mb-6 flex items-center"> <i class="fas fa-exclamation-triangle text-yellow-500 mr-3"></i>注意事项 </h2>
+            <div class="bg-yellow-50 dark:bg-yellow-900/30 border-l-4 border-yellow-400 p-6 rounded-r-lg">
+                <ul class="space-y-4">
+                    <li class="flex items-start"> <i class="fas fa-circle-info text-yellow-500 mt-1 mr-3"></i>
+                        <p>网站提供的外部链接来源于网络，用户需自行判断其合法性和准确性。如发现违规内容，请及时向网站管理员反馈。</p>
+                    </li>
+                    <li class="flex items-start"> <i class="fas fa-circle-info text-yellow-500 mt-1 mr-3"></i>
+                        <p>部分影视资源可能涉及版权问题，请用户在合法合规的前提下使用。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="mb-16 fade-in" style="animation-delay: 1s; opacity: 1; transform: translateY(0px); transition: opacity 0.8s, transform 0.8s;">
+            <div class="bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30 rounded-xl p-8 shadow-lg">
+                <h2 class="text-2xl font-bold mb-4 text-center">萝莉在线 - 最新热门电影、电视剧在线观看</h2>
+                <p class="text-lg mb-6 text-center"></p>
+                <p> </p>
+                <p>萝莉在线是一个专注于提供最新、最热门影视内容的在线观看平台。无论你是喜欢动作片、爱情片、科幻片，还是热衷于追剧，这里都能找到你喜欢的作品。平台上的影视资源丰富多样，涵盖了国内外各种类型的电影和电视剧，满足不同观众的观影需求。</p>
+                <p>萝莉在线的画质清晰，播放流畅，让你在家就能享受到影院级别的观影体验。无论是用电脑、手机还是平板，都能随时随地观看你喜欢的影视作品。平台还定期更新最新的影视资源，确保你总能第一时间看到最新的电影和电视剧。</p>
+                <p>除了丰富的影视资源，萝莉在线还提供了便捷的搜索功能，帮助你快速找到想看的影片。用户界面简洁友好，操作简单，即使是第一次使用也能轻松上手。无论你是影视爱好者，还是偶尔想放松一下，萝莉在线都是你不错的选择。</p>
+                <p></p><br>
+                <div class="flex justify-center"> <a class="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium flex items-center" href="/player.html" target="_blank" rel="nofollow"> <i class="fas fa-play-circle mr-2"></i>立即观看 </a> </div>
+            </div>
+        </section>
+        <footer class="text-center text-gray-600 dark:text-gray-400 pt-8 border-t border-gray-200 dark:border-gray-700 fade-in" style="animation-delay: 1.2s; opacity: 1; transform: translateY(0px); transition: opacity 0.8s, transform 0.8s;">
+            <div class="mb-4">
+                 <div class="links"> <a href="/tangxingvlog.html" title="海量糖心tv" target="_blank">海量糖心tv | </a> <a href="/luolizaixian.html" title="在线发布页" target="_blank">在线发布页 | </a> <a href="/zaixiandaohang.html" title="在线导航地址发布页" target="_blank">在线导航地址发布页 | </a>  </div>
+           </div>
+            <p class="text-sm">© 2025 萝莉在线 - 最新热门电影、电视剧在线观看</p>
+        </footer>
+    </div>
+    <script>
+        const themeToggle = document.getElementById(`themeToggle`);
+        if (window.matchMedia && window.matchMedia(`(prefers-color-scheme: dark)`).matches) {
+            document.documentElement.classList.add(`dark`)
+        };
+        themeToggle.addEventListener(`click`, () => {
+            document.documentElement.classList.toggle(`dark`)
+        });
+        document.addEventListener(`DOMContentLoaded`, () => {
+            const a = document.querySelectorAll(`.fade-in`);
+            const b = new IntersectionObserver(a => {
+                a.forEach(a => {
+                    if (a.isIntersecting) {
+                        a.target.style.opacity = `1`;
+                        a.target.style.transform = `translateY(0)`
+                    }
+                })
+            }, {
+                threshold: 0.1
+            });
+            a.forEach(a => {
+                a.style.opacity = `0`;
+                a.style.transform = `translateY(20px)`;
+                a.style.transition = `opacity 0.8s ease, transform 0.8s ease`;
+                b.observe(a)
+            })
+        })
+    </script>
+</body>
+
+</html>
